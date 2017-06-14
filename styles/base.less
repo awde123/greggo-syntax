@@ -5,9 +5,8 @@ atom-text-editor {
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
-
-  .indent-guide {
-    color: @syntax-indent-guide-color;
+  .editor mini{
+    background-color: red;
   }
 
   .invisible-character {
@@ -293,6 +292,9 @@ atom-text-editor {
 
 // Mini editor
 
-atom-text-editor[mini] .scroll-view {
+atom-text-editor[mini]{
+  background: lighten(@syntax-background-color, 3%) !important;
+  .scroll-view {
   padding-left: 1px;
+}
 }
